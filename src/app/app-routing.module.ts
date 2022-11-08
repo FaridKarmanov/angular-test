@@ -8,7 +8,7 @@ import {
 } from './components';
 
 const routes: Routes = [
-  { path: '', component: IncomeComponent },
+  { path: 'income', component: IncomeComponent },
   { path: 'outcome', component: OutcomeComponent },
   { path: 'loan', component: LoansComponent },
   { path: 'investment', component: InvestmentsComponent },

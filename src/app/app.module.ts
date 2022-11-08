@@ -22,7 +22,7 @@ import { TestService } from './services';
     NavbarComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [TestService, { provide: APP_BASE_HREF, useValue: '/navigator' }],
+  providers: [TestService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
