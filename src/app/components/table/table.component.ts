@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TestService } from 'src/app/services/test.service';
 import { IPerson } from 'src/app/types';
@@ -25,6 +25,4 @@ export class InformationTableComponent {
     let rand = 1 - 0.5 + Math.random() * (9999 - 1 + 1);
     return Math.round(rand);
   }
-
-  ngOnInit() {}
 }
