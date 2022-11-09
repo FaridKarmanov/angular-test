@@ -4,7 +4,7 @@ import { TestService } from 'src/app/services/test.service';
 import { IPerson } from 'src/app/types';
 
 @Component({
-  selector: 'income',
+  selector: 'InformationTable',
   templateUrl: './InformationTable.component.html',
 })
 export class InformationTableComponent {
