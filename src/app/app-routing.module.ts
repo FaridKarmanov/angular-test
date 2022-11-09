@@ -1,17 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {
-  IncomeComponent,
-  InvestmentsComponent,
-  LoansComponent,
-  OutcomeComponent,
-} from './components';
+import { InformationTableComponent } from './components';
 
 const routes: Routes = [
-  { path: 'income', component: IncomeComponent },
-  { path: 'outcome', component: OutcomeComponent },
-  { path: 'loan', component: LoansComponent },
-  { path: 'investment', component: InvestmentsComponent },
+  { path: 'income', component: InformationTableComponent },
+  { path: 'outcome', component: InformationTableComponent },
+  { path: 'loan', component: InformationTableComponent },
+  { path: 'investment', component: InformationTableComponent },
 ];
 
 @NgModule({

@@ -4,10 +4,10 @@ import { TestService } from 'src/app/services/test.service';
 import { IPerson } from 'src/app/types';
 
 @Component({
-  selector: 'outcome',
-  templateUrl: './outcome.component.html',
+  selector: 'income',
+  templateUrl: './InformationTable.component.html',
 })
-export class OutcomeComponent {
+export class InformationTableComponent {
   data: IPerson[];
   type: string;
 
@@ -20,5 +20,10 @@ export class OutcomeComponent {
     });
 
     this.data = dataService.filterData(this.type);
+  }
+
+  randomInteger() {
+    let rand = 1 - 0.5 + Math.random() * (9999 - 1 + 1);
+    return Math.round(rand);
   }
 }
