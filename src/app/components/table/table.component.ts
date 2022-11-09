@@ -4,8 +4,8 @@ import { TestService } from 'src/app/services/test.service';
 import { IPerson } from 'src/app/types';
 
 @Component({
-  selector: 'InformationTable',
-  templateUrl: './InformationTable.component.html',
+  selector: 'informationTable',
+  templateUrl: './table.component.html',
 })
 export class InformationTableComponent {
   data: IPerson[];
@@ -18,12 +18,13 @@ export class InformationTableComponent {
     this.activatedRoute.queryParams.subscribe((data) => {
       this.type = Object.keys(data)[0];
     });
-
-    this.data = dataService.filterData(this.type);
+    this.data = this.dataService.filterData(this.type);
   }
 
   randomInteger() {
     let rand = 1 - 0.5 + Math.random() * (9999 - 1 + 1);
     return Math.round(rand);
   }
+
+  ngOnInit() {}
 }

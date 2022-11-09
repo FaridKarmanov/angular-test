@@ -1,4 +1,4 @@
-import { InformationTableComponent } from './InformationTable/InformationTable.component';
-import { NavbarComponent } from './Navigation/navigation.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { InformationTableComponent } from './table/table.component';
 
 export { InformationTableComponent, NavbarComponent };
